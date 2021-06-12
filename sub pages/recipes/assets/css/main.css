@@ -506,7 +506,7 @@ input, select, textarea {
 		}
 
 			.row > * {
-				padding: 0 0 0 2.5em;
+				padding: 0 0 0 0;
 			}
 
 			.row.gtr-uniform {
@@ -2171,6 +2171,10 @@ input, select, textarea {
 				display: c;
 				max-width: 400px;
 			}
+		.image.recipe{
+			overflow: hidden;
+		}
+
 		.image.welcome {
 			position: relative;
 		
@@ -2771,7 +2775,7 @@ input, select, textarea {
 			
 		}
 
-
+		
 		#main .centered {
 		  display: none;
 		  position: absolute;
@@ -2817,6 +2821,10 @@ input, select, textarea {
 				border-color: #971B1F;
 				
 			}
+			#main > section div{
+				padding-bottom: 3em;
+				margin-top: 10em;
+			}
 			#main > section p{
 				color:rgba(255, 255, 255, 0.4);
 				font-size: 200%;
@@ -2824,12 +2832,20 @@ input, select, textarea {
 				line-height: 1em;
 			}
 			#main > section h2{
-				font-size: 300%;
+				font-size: 250%;
+				padding-left: 1em;
 			}
 			#main > section h3{
 				color:#971B1F;
 				font-size: 200%;
 				line-height: 0em;
+				text-align: left;
+				margin-left: 2em;
+				margin-bottom: -4em;
+			}
+			#main > section h3 span{
+				color:#ffffff;
+				
 			}
 			#main > section h4{
 				color:#ffffff;
@@ -2839,7 +2855,11 @@ input, select, textarea {
 				color:#971B1F;
 				font-size: 100%;
 			}
-
+			#main ol li{
+				font-size: 200%;
+				line-height: 200%;
+				margin-left: 2em;
+			}
 			#main > section:first-child {
 			border-top: 0;
 				margin-top: 0;
@@ -2849,7 +2869,13 @@ input, select, textarea {
 				margin-bottom: 0em;
 				padding-bottom: 0em;
 				}
-
+			#main > section label{
+				margin-left: 3em;
+				font-size: 150%;
+			}
+			input[type="checkbox"]:checked + label {
+				color: rgba(255, 0, 0, 0.575);
+			}
 
 	
 
@@ -3131,22 +3157,19 @@ input, select, textarea {
 		opacity: 1.0 !important;
 	}
 
-/* XLarge */
 
-	@media screen and (max-width: 1800px) {
 
-		/* Basic */
-
-			body, input, select, textarea {
-				font-size: 12pt;
-			}
-
-	}
-
-/* Large */
+/* Large and XLarge*/
 
 	@media screen and (max-width: 8000px) {
-
+		/* Recipe page */
+		/* Signature */
+		.cook{
+			display: flexbox;
+		}
+		.cookXS{
+			display: none;
+		}
 		/* Header */
 
 			#header {
@@ -3193,6 +3216,8 @@ input, select, textarea {
 
 	@media screen and (max-width: 950px) {
 
+
+		
 		/* Basic */
 
 			h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
@@ -3299,6 +3324,9 @@ input, select, textarea {
 			#main .centered {
 				display: none;
 			}
+			.pagetitle{
+				padding-top: 1em;
+			}
 	}
 
 /* Small */
@@ -3398,6 +3426,15 @@ input, select, textarea {
 /* XSmall */
 
 	@media screen and (max-width: 480px) {
+		/* Recipe page */
+		/* Signature */
+		.cook{
+			display: none;
+		}
+		.cookXS{
+			display: flexbox;
+			margin-bottom: -11em;
+		}
 
 		/* Header */
 
