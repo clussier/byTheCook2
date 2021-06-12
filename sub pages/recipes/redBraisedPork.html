@@ -141,7 +141,6 @@
 					</section>
 
 
-			</div>
 
 		<!-- Footer -->
 			<footer id="footer">
@@ -163,6 +162,15 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<!-- Loader-->
+			<div class="loading-wrapper"><div class="loader">Loading...</div></div>
+			<script>
+				$(window).on("load",function(){
+				  $(".loading-wrapper").fadeOut("slow");
+				});
+			</script>
+			</div>
 
 	</body>
 </html>
