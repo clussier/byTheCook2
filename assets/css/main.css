@@ -2824,6 +2824,8 @@ input, select, textarea {
     #mian .reduceSideMargin{
       margin-left: 0em;
       margin-right: 0em;
+      padding-left: 0em;
+      padding-right: 0em;
     }
 
 		#main .centered {
