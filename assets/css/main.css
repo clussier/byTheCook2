@@ -111,7 +111,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #fbfbfb;
+		color: #fbffff;
 		font-family: 'Oregano';
 		font-size: 16pt;
 		font-weight: 400;
@@ -2874,7 +2874,7 @@ input, select, textarea {
 
 			}
 			#main > section p{
-				color:rgba(255, 255, 255, 0.4);
+				color:rgba(255, 255, 255, 0.6);
 				font-size: 200%;
 				margin-bottom: 3em;
 				line-height: 1em;
